@@ -1,3 +1,9 @@
+#Rasa NLP
+
+Start your docker by running:
+`docker-compose up -d` from the rasa-docker directory.
+
+Learn more about this from:
 https://rasa.com/docs/core/installation/
 
 
