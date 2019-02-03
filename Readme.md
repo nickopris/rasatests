@@ -1,4 +1,4 @@
-#Rasa NLP
+# Rasa NLP
 
 Start your docker by running:
 `docker-compose up -d` from the rasa-docker directory.
@@ -22,7 +22,7 @@ It should reply with `goodbye` intent high confidence score
 It should reply with `learning` intent high confidence score
 
 
-#Training file (markdown format)
+# Training file (markdown format)
 config_train_server_md.yml
 See also: https://rasa.com/docs/nlu/dataformat/
 See also: https://github.com/RasaHQ/rasa-nlu-trainer 
@@ -43,7 +43,7 @@ See also: https://github.com/RasaHQ/rasa-nlu-trainer
       - do you know how to
 
 
-#Training with JSON format
+# Training with JSON format
     curl 'https://raw.githubusercontent.com/RasaHQ/rasa_nlu/master/sample_configs/config_train_server_json.yml' | \
     curl --request POST --header 'content-type: application/x-yml' --data-binary @- --url 'localhost:5000/train?project=test_model'
 
@@ -51,13 +51,13 @@ See file attached for a local JSON file.
     
     curl --request POST --header 'content-type: application/x-yml' --data-binary @config_train_server_json.yml --url 'localhost:5000/train?project=test_model'
 
-#HTTP API
+# HTTP API
 See: https://rasa.com/docs/nlu/http/
 - delete models:
 
     curl -X DELETE localhost:5000/models?project=test_model&model=model_XXXX
 
-#Troubleshooting
+# Troubleshooting
 
 `The server can't train more models right now!`
 
@@ -70,14 +70,14 @@ https://hub.docker.com/r/rasa/duckling/
 
 `$ curl -XPOST http://0.0.0.0:8000/parse --data 'locale=en_GB&amp;text=tomorrow at eight'`
 
-#Rasa nlu
+# Rasa nlu
 https://hub.docker.com/r/rasa/rasa_nlu/
 
 
 If wget not installed on Mac:
 `brew install wget --with-libressl`
 
-#to check
+# to check
 https://github.com/paschmann/rasa-ui
 https://www.quora.com/What-are-good-ways-to-automatically-find-synonyms-using-machine-learning-ML-techniques-What-are-good-ways-to-automatically-find-antonyms-using-ML-techniques
 
