@@ -1,0 +1,41 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yep"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "learning",
+        "text": "how do I"
+      },
+      {
+        "intent": "learning",
+        "text": "teach me about"
+      },
+      {
+        "intent": "learning",
+        "text": "I need to know"
+      },
+      {
+        "intent": "learning",
+        "text": "do you know how to"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
